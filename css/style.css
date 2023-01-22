@@ -1,0 +1,229 @@
+:root{
+    --dark-blue:#2C3E50;
+    --green-light:#1ABC9C;
+    --darklight-blue:#3A546D;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+ol,
+menu,
+li{
+    list-style-type: none;
+} 
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+.section-title{
+    font-size: 44px;
+    font-weight: 900;
+}
+
+/* HEADER SECTION */
+
+.header-bg{
+    background-color: var(--dark-blue);
+}
+
+.row-header{
+    padding: 35px 0;
+}
+
+.col-left-header h1{
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+.col-left-header{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    /* font-size: 19px;
+    font-weight: 900; */
+}
+
+.col-right-header{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+/* HERO SECTION */
+
+.hero-bg{
+    background-color: var(--green-light);
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 35px 0;
+}
+
+.hero-img {
+    width: 228px;
+    height: 259px;
+}
+
+.hero-title{
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.hero-desc{
+    font-size: 18px;
+}
+
+.star{
+    position: relative;
+    font-size: 28px;
+    
+}
+
+.star::before{
+    content: "";
+    background-color: currentColor;
+    height: 4px;
+    border-radius: 999px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.star::after{
+    content: "";
+    background-color: currentColor;
+    height: 4px;
+    border-radius: 999px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translate(50%);
+}
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio-header  {
+   padding: 60px;
+}
+
+.portfolio-header .col-12{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio-grid{
+    row-gap: 20px;
+    padding: 35px 0 70px 0;
+}
+
+.portfolio-grid div[class^="col-"]>img{
+    border-radius: 40px;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+    background-color: var(--green-light);
+    padding: 50px;
+}
+
+.about-header .col-12{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content{
+    font-weight: 600;
+    font-size: 22px;
+    padding: 40px;
+}
+
+.download-button{
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-button a{
+    border: 1px solid currentColor;
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
