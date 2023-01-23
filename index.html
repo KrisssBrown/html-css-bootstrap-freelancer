@@ -12,28 +12,43 @@
 <body>
     <section class="header-bg">
         <header class="container">
-            <div class="row row-header white">
+            <div class=" row-header py-3 white row row-cols-auto justify-content-between align-items-center">
                 <div class="col-3 col-sm-5 col-left-header">
                     <h1 class="header-title">
                         START BOOTSTRAP
                     </h1>
                 </div>
 
-                <div class="col-lg-auto col-right-header">
-                    <a href="#">
-                        PORTFOLIO
-                    </a>
+                <div>
+                    <ul class=" d-none d-md-flex mb-0 col-right-header justify-content-between align-items-center mb-0">
+                        <li>
+                            <a href="#">
+                                PORTFOLIO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="d-block d-md-none">
+                        <i class="fa-solid fa-bars"></i>
+                      </a>
+                    
+                    
+                    
+                </div>
+                <!-- <div class="col-lg-auto col-right-header">
                 </div>
                 <div class="col-lg-auto col-right-header">
-                    <a href="#">
-                        ABOUT
-                    </a>
-                </div>
-                <div class="col-lg-auto col-right-header">
-                    <a href="#">
-                        CONTACT
-                    </a>
-                </div>
+                </div> -->
             </div>
         </header>
     </section>
@@ -136,17 +151,91 @@
                         <i class="fa-solid fa-download"></i>
                         Download
                     </a>
-                    
                 </div>
-
-
-
             </div>
+        </section>
 
+        <section class="form py-5">
+            <div class="container">
+                <div class="row section-title d-flex flex-column gy-5">
+                    <div class="col d-flex align-items-center flex-column">
+                        <h2>
+                            CONTACT ME
+                        </h2>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <ul class="d-flex flex-column gy-4 ">
+                            <li class="my-border-bottom py-2">
+                                <input type="text" class="border-0 d-block" placeholder="Nome">
+                            </li>
+                            <li class="my-border-bottom py-2">
+                                <input type="text" class="border-0 d-block" placeholder="Cognome">
+                            </li>
+                            <li class="my-border-bottom py-2">
+                                <input type="email" class="border-0 d-block" placeholder="Email">
+                            </li>
+                            <li class="my-border-bottom py-2">
+                                <textarea name="text" id="text-area-contact-us" cols="30" rows="5" placeholder="Messaggio" class="border-0 py-2 "></textarea>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary">
+                                    Invia
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
+        <section class="footer-info py-5">
+            <div class="container">
+                <div class="row row-cols-3 white justify-content-between">
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <h2 class="footer-section-title">
+                            LOCATION
+                        </h2>
+                        <p>
+                            2215 John Daniel Drive Clark, MO 54243
+                        </p>
+                    </div>
+                    <div class="col-md-3col-sm-12 text-center">
+                        <h2 class="footer-section-title">
+                            AROUND THE WEB
+                        </h2>
+
+                        <ul class="d-flex justify-content-evenly ps-0 ">
+                            <li class="p-1 my-circle-border align-items-center">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="p-1 my-circle-border">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                            <li class="p-1 my-circle-border">
+                                <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            <li class="p-1 my-circle-border">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <h2 class="footer-section-title">
+                            ABOUT FREELANCER
+                        </h2>
+                        <p>
+                            Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </footer>
     
